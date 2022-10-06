@@ -1,3 +1,14 @@
+body{
+    background-color: #c29938;
+
+    footer{
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        position: fixed;
+
+    }
+}
 canvas {
     border: 5px solid black;
     position: absolute;
@@ -8,7 +19,7 @@ canvas {
     height: 600px;
     background-image: url(../sprites/Bckground2.png) ;
 }
-button {
+#btn {
     position: absolute;
     background-image: url('../sprites/START1.gif');
     background-size: contain;
@@ -21,12 +32,47 @@ button {
     width: 175px;
     height: 100px;
 }
-
-.container1 {
-    width: 100px;
-    height: 50px;
-    font-family: 'Bungee Shade', cursive;
-    font-size: 20px;
-    float: left;
-    text-decoration: none;
+#scroreBoard{
+    position: absolute;
+    background-image: url('../sprites/box2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    margin-left: 12em;
+    p {
+        font-family: 'Silkscreen', cursive;
+        font-size: 25px;
+        text-decoration: none;
+        margin-left: 1em;
+        color: white;
+        margin-top: 1.5em;
+    }
+}
+#scroreCycle{
+    position: absolute;
+    background-image: url('../sprites/box2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    margin-left: -12em;
+    p {
+        font-family: 'Silkscreen', cursive;
+        font-size: 25px;
+        text-decoration: none;
+        margin-left: 1em;
+        color: white;
+        margin-top: 1.5em;
+    }
 }
